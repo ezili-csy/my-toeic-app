@@ -1,0 +1,1606 @@
+{
+    "rc": [
+        {
+            "id": 1,
+            "q": "The manager _______ the proposal yesterday.",
+            "a": [
+                "accept",
+                "accepting",
+                "accepted",
+                "accepts"
+            ],
+            "correct": 2,
+            "trans": "매니저는 어제 제안을 수락했다.",
+            "exp": "yesterday는 과거 시점입니다.",
+            "voca": {
+                "proposal": "제안"
+            }
+        },
+        {
+            "id": 2,
+            "q": "Please read the instructions _______ before starting.",
+            "a": [
+                "careful",
+                "carefully",
+                "carefulness",
+                "caring"
+            ],
+            "correct": 1,
+            "trans": "시작 전 지침을 주의 깊게 읽으세요.",
+            "exp": "동사 수식은 부사 자리입니다.",
+            "voca": {
+                "instruction": "지침"
+            }
+        },
+        {
+            "id": 3,
+            "q": "Our production _______ has increased by 20%.",
+            "a": [
+                "capable",
+                "capability",
+                "capably",
+                "capacious"
+            ],
+            "correct": 1,
+            "trans": "생산 능력이 20% 증가했습니다.",
+            "exp": "명사 자리입니다.",
+            "voca": {
+                "increase": "증가하다"
+            }
+        },
+        {
+            "id": 4,
+            "q": "Mr. Kim is _______ for the marketing department.",
+            "a": [
+                "responsible",
+                "responsibility",
+                "responsibly",
+                "responsiveness"
+            ],
+            "correct": 0,
+            "trans": "김 씨는 마케팅 부서를 책임지고 있다.",
+            "exp": "be responsible for 관용구.",
+            "voca": {
+                "department": "부서"
+            }
+        },
+        {
+            "id": 5,
+            "q": "The flight was delayed _______ bad weather.",
+            "a": [
+                "due to",
+                "because",
+                "since",
+                "as"
+            ],
+            "correct": 0,
+            "trans": "악천후로 비행기가 지연되었다.",
+            "exp": "명사구 앞 전치사 due to.",
+            "voca": {
+                "delay": "지연시키다"
+            }
+        },
+        {
+            "id": 6,
+            "q": "All staff must _______ their security badges.",
+            "a": [
+                "wear",
+                "wearing",
+                "wore",
+                "worn"
+            ],
+            "correct": 0,
+            "trans": "모든 직원은 보안 배지를 착용해야 합니다.",
+            "exp": "조동사 뒤 동사원형.",
+            "voca": {
+                "security": "보안"
+            }
+        },
+        {
+            "id": 7,
+            "q": "The results will be _______ next Monday.",
+            "a": [
+                "announce",
+                "announced",
+                "announcing",
+                "announcement"
+            ],
+            "correct": 1,
+            "trans": "결과는 다음 주 월요일에 발표될 것입니다.",
+            "exp": "be+p.p. 수동태.",
+            "voca": {
+                "announce": "발표하다"
+            }
+        },
+        {
+            "id": 8,
+            "q": "We offer _______ prices for our members.",
+            "a": [
+                "compete",
+                "competitive",
+                "competitively",
+                "competition"
+            ],
+            "correct": 1,
+            "trans": "회원들께 경쟁력 있는 가격을 제공합니다.",
+            "exp": "명사 수식 형용사.",
+            "voca": {
+                "competitive": "경쟁력 있는"
+            }
+        },
+        {
+            "id": 9,
+            "q": "She is _______ for the promotion.",
+            "a": [
+                "eligible",
+                "eligibility",
+                "eligibly",
+                "eligo"
+            ],
+            "correct": 0,
+            "trans": "그녀는 승진 자격이 있습니다.",
+            "exp": "be eligible for: ~할 자격이 있다.",
+            "voca": {
+                "promotion": "승진"
+            }
+        },
+        {
+            "id": 10,
+            "q": "Please _______ the attached document.",
+            "a": [
+                "review",
+                "reviewed",
+                "reviewing",
+                "reviews"
+            ],
+            "correct": 0,
+            "trans": "첨부된 문서를 검토해 주세요.",
+            "exp": "명령문 동사원형.",
+            "voca": {
+                "attached": "첨부된"
+            }
+        },
+        {
+            "id": 11,
+            "q": "The company decided to _______ the office.",
+            "a": [
+                "expand",
+                "expansion",
+                "expansive",
+                "expansively"
+            ],
+            "correct": 0,
+            "trans": "회사는 사무실을 확장하기로 결정했습니다.",
+            "exp": "to 부정사 동사원형.",
+            "voca": {
+                "expand": "확장하다"
+            }
+        },
+        {
+            "id": 12,
+            "q": "This area is _______ reserved for residents.",
+            "a": [
+                "exclusive",
+                "exclusively",
+                "exclusivity",
+                "exclude"
+            ],
+            "correct": 1,
+            "trans": "이 구역은 거주자 전용으로 예약되어 있습니다.",
+            "exp": "분사 수식 부사.",
+            "voca": {
+                "resident": "거주자"
+            }
+        },
+        {
+            "id": 13,
+            "q": "The new policy is _______ starting January.",
+            "a": [
+                "effect",
+                "effective",
+                "effectively",
+                "effector"
+            ],
+            "correct": 1,
+            "trans": "새 정책은 1월부터 효력이 발생합니다.",
+            "exp": "be effective: 효력이 있다.",
+            "voca": {
+                "policy": "정책"
+            }
+        },
+        {
+            "id": 14,
+            "q": "He answered the questions _______.",
+            "a": [
+                "confident",
+                "confidently",
+                "confidence",
+                "confiding"
+            ],
+            "correct": 1,
+            "trans": "그는 질문에 자신 있게 대답했습니다.",
+            "exp": "동사 수식 부사.",
+            "voca": {
+                "confidently": "자신 있게"
+            }
+        },
+        {
+            "id": 15,
+            "q": "We need to find a _______ solution.",
+            "a": [
+                "practice",
+                "practical",
+                "practically",
+                "practitioner"
+            ],
+            "correct": 1,
+            "trans": "우리는 실질적인 해결책을 찾아야 합니다.",
+            "exp": "명사 수식 형용사.",
+            "voca": {
+                "practical": "실질적인"
+            }
+        },
+        {
+            "id": 16,
+            "q": "The seminar was _______ informative.",
+            "a": [
+                "high",
+                "highly",
+                "height",
+                "higher"
+            ],
+            "correct": 1,
+            "trans": "세미나는 매우 유익했습니다.",
+            "exp": "형용사 수식 부사.",
+            "voca": {
+                "informative": "유익한"
+            }
+        },
+        {
+            "id": 17,
+            "q": "They will _______ the contract soon.",
+            "a": [
+                "sign",
+                "signature",
+                "signed",
+                "signing"
+            ],
+            "correct": 0,
+            "trans": "그들은 곧 계약서에 서명할 것입니다.",
+            "exp": "조동사 뒤 동사원형.",
+            "voca": {
+                "contract": "계약서"
+            }
+        },
+        {
+            "id": 18,
+            "q": "The car is _______ in the garage.",
+            "a": [
+                "park",
+                "parked",
+                "parking",
+                "parks"
+            ],
+            "correct": 1,
+            "trans": "차는 차고에 주차되어 있습니다.",
+            "exp": "상태를 나타내는 p.p.",
+            "voca": {
+                "garage": "차고"
+            }
+        },
+        {
+            "id": 19,
+            "q": "Attendance is _______ at the meeting.",
+            "a": [
+                "require",
+                "required",
+                "requirement",
+                "requiring"
+            ],
+            "correct": 1,
+            "trans": "회의 참석이 요구됩니다.",
+            "exp": "수동태.",
+            "voca": {
+                "attendance": "참석"
+            }
+        },
+        {
+            "id": 20,
+            "q": "The report provides _______ information.",
+            "a": [
+                "detail",
+                "detailed",
+                "details",
+                "detailing"
+            ],
+            "correct": 1,
+            "trans": "보고서는 상세한 정보를 제공합니다.",
+            "exp": "명사 수식 분사(형용사).",
+            "voca": {
+                "detailed": "상세한"
+            }
+        },
+        {
+            "id": 21,
+            "q": "She works _______ than her colleagues.",
+            "a": [
+                "hard",
+                "harder",
+                "hardest",
+                "hardly"
+            ],
+            "correct": 1,
+            "trans": "그녀는 동료들보다 더 열심히 일합니다.",
+            "exp": "비교급 than.",
+            "voca": {
+                "colleague": "동료"
+            }
+        },
+        {
+            "id": 22,
+            "q": "Please _______ me of the changes.",
+            "a": [
+                "remind",
+                "reminder",
+                "reminded",
+                "reminding"
+            ],
+            "correct": 0,
+            "trans": "변경 사항을 제게 상기시켜 주세요.",
+            "exp": "명령문 동사원형.",
+            "voca": {
+                "remind": "상기시키다"
+            }
+        },
+        {
+            "id": 23,
+            "q": "The project was a _______ success.",
+            "a": [
+                "complete",
+                "completely",
+                "completion",
+                "completing"
+            ],
+            "correct": 0,
+            "trans": "그 프로젝트는 완전한 성공이었습니다.",
+            "exp": "명사 수식 형용사.",
+            "voca": {
+                "success": "성공"
+            }
+        },
+        {
+            "id": 24,
+            "q": "We look forward to _______ you.",
+            "a": [
+                "meet",
+                "meeting",
+                "met",
+                "meets"
+            ],
+            "correct": 1,
+            "trans": "당신을 만나기를 고대합니다.",
+            "exp": "look forward to + 동명사.",
+            "voca": {
+                "look forward to": "고대하다"
+            }
+        },
+        {
+            "id": 25,
+            "q": "The hotel is _______ located.",
+            "a": [
+                "convenient",
+                "conveniently",
+                "convenience",
+                "convene"
+            ],
+            "correct": 1,
+            "trans": "호텔은 편리한 곳에 위치해 있습니다.",
+            "exp": "분사 수식 부사.",
+            "voca": {
+                "located": "위치한"
+            }
+        },
+        {
+            "id": 26,
+            "q": "The price is _______ negotiable.",
+            "a": [
+                "slight",
+                "slightly",
+                "slightness",
+                "slighting"
+            ],
+            "correct": 1,
+            "trans": "가격은 약간 협상 가능합니다.",
+            "exp": "형용사 수식 부사.",
+            "voca": {
+                "negotiable": "협상 가능한"
+            }
+        },
+        {
+            "id": 27,
+            "q": "She handled the situation _______.",
+            "a": [
+                "professional",
+                "professionally",
+                "professionalism",
+                "profession"
+            ],
+            "correct": 1,
+            "trans": "그녀는 상황을 전문가답게 처리했습니다.",
+            "exp": "동사 수식 부사.",
+            "voca": {
+                "handle": "처리하다"
+            }
+        },
+        {
+            "id": 28,
+            "q": "There is a _______ for new members.",
+            "a": [
+                "discount",
+                "discounted",
+                "discounting",
+                "discounts"
+            ],
+            "correct": 0,
+            "trans": "신규 회원을 위한 할인이 있습니다.",
+            "exp": "관사 뒤 명사.",
+            "voca": {
+                "discount": "할인"
+            }
+        },
+        {
+            "id": 29,
+            "q": "The store is _______ for renovation.",
+            "a": [
+                "close",
+                "closed",
+                "closing",
+                "closely"
+            ],
+            "correct": 1,
+            "trans": "상점은 수리를 위해 닫혀 있습니다.",
+            "exp": "상태의 형용사/분사.",
+            "voca": {
+                "renovation": "수리"
+            }
+        },
+        {
+            "id": 30,
+            "q": "Please _______ the application form.",
+            "a": [
+                "fill out",
+                "filled out",
+                "filling out",
+                "fills out"
+            ],
+            "correct": 0,
+            "trans": "신청서를 작성해 주세요.",
+            "exp": "명령문 동사원형.",
+            "voca": {
+                "fill out": "작성하다"
+            }
+        },
+        {
+            "id": 31,
+            "q": "The system is _______ updated.",
+            "a": [
+                "regular",
+                "regularly",
+                "regularity",
+                "regulate"
+            ],
+            "correct": 1,
+            "trans": "시스템은 정기적으로 업데이트됩니다.",
+            "exp": "분사 수식 부사.",
+            "voca": {
+                "regularly": "정기적으로"
+            }
+        },
+        {
+            "id": 32,
+            "q": "We need to _______ the target.",
+            "a": [
+                "reach",
+                "reaching",
+                "reached",
+                "reaches"
+            ],
+            "correct": 0,
+            "trans": "우리는 목표에 도달해야 합니다.",
+            "exp": "to 부정사 동사원형.",
+            "voca": {
+                "target": "목표"
+            }
+        },
+        {
+            "id": 33,
+            "q": "He is a very _______ person.",
+            "a": [
+                "rely",
+                "reliable",
+                "reliably",
+                "reliability"
+            ],
+            "correct": 1,
+            "trans": "그는 매우 신뢰할 수 있는 사람입니다.",
+            "exp": "명사 수식 형용사.",
+            "voca": {
+                "reliable": "신뢰할 수 있는"
+            }
+        },
+        {
+            "id": 34,
+            "q": "The view is _______ beautiful.",
+            "a": [
+                "absolute",
+                "absolutely",
+                "absoluteness",
+                "absolve"
+            ],
+            "correct": 1,
+            "trans": "전경이 정말 아름답습니다.",
+            "exp": "형용사 수식 부사.",
+            "voca": {
+                "view": "전경"
+            }
+        },
+        {
+            "id": 35,
+            "q": "Please _______ your password.",
+            "a": [
+                "enter",
+                "entering",
+                "entered",
+                "enters"
+            ],
+            "correct": 0,
+            "trans": "비밀번호를 입력하세요.",
+            "exp": "명령문 동사원형.",
+            "voca": {
+                "enter": "입력하다"
+            }
+        },
+        {
+            "id": 36,
+            "q": "The training is _______ for all.",
+            "a": [
+                "benefit",
+                "beneficial",
+                "beneficially",
+                "beneficiary"
+            ],
+            "correct": 1,
+            "trans": "훈련은 모두에게 유익합니다.",
+            "exp": "보어 형용사.",
+            "voca": {
+                "beneficial": "유익한"
+            }
+        },
+        {
+            "id": 37,
+            "q": "They will _______ the winners today.",
+            "a": [
+                "selection",
+                "select",
+                "selected",
+                "selecting"
+            ],
+            "correct": 1,
+            "trans": "그들은 오늘 우승자를 선발할 것입니다.",
+            "exp": "조동사 뒤 동사원형.",
+            "voca": {
+                "select": "선발하다"
+            }
+        },
+        {
+            "id": 38,
+            "q": "The box is _______ heavy.",
+            "a": [
+                "extreme",
+                "extremely",
+                "extremity",
+                "extremist"
+            ],
+            "correct": 1,
+            "trans": "상자가 매우 무겁습니다.",
+            "exp": "형용사 수식 부사.",
+            "voca": {
+                "heavy": "무거운"
+            }
+        },
+        {
+            "id": 39,
+            "q": "She _______ the email yesterday.",
+            "a": [
+                "send",
+                "sent",
+                "sending",
+                "sends"
+            ],
+            "correct": 1,
+            "trans": "그녀는 어제 이메일을 보냈습니다.",
+            "exp": "과거 시제.",
+            "voca": {
+                "sent": "보냈다"
+            }
+        },
+        {
+            "id": 40,
+            "q": "We must _______ the costs.",
+            "a": [
+                "reduce",
+                "reduction",
+                "reducing",
+                "reduced"
+            ],
+            "correct": 0,
+            "trans": "우리는 비용을 줄여야 합니다.",
+            "exp": "조동사 동사원형.",
+            "voca": {
+                "reduce": "줄이다"
+            }
+        },
+        {
+            "id": 41,
+            "q": "The event was _______ organized.",
+            "a": [
+                "good",
+                "well",
+                "better",
+                "best"
+            ],
+            "correct": 1,
+            "trans": "행사는 잘 조직되었습니다.",
+            "exp": "분사 수식 부사 well.",
+            "voca": {
+                "organize": "조직하다"
+            }
+        },
+        {
+            "id": 42,
+            "q": "He is an _______ engineer.",
+            "a": [
+                "experience",
+                "experienced",
+                "experiencing",
+                "experiences"
+            ],
+            "correct": 1,
+            "trans": "그는 숙련된 엔지니어입니다.",
+            "exp": "명사 수식 형용사(분사).",
+            "voca": {
+                "experienced": "숙련된"
+            }
+        },
+        {
+            "id": 43,
+            "q": "They arrived _______ at the office.",
+            "a": [
+                "prompt",
+                "promptly",
+                "promptitude",
+                "prompting"
+            ],
+            "correct": 1,
+            "trans": "그들은 사무실에 즉시 도착했습니다.",
+            "exp": "동사 수식 부사.",
+            "voca": {
+                "promptly": "즉시"
+            }
+        },
+        {
+            "id": 44,
+            "q": "The product is _______ available.",
+            "a": [
+                "wide",
+                "widely",
+                "width",
+                "widen"
+            ],
+            "correct": 1,
+            "trans": "제품은 널리 이용 가능합니다.",
+            "exp": "형용사 수식 부사.",
+            "voca": {
+                "available": "이용 가능한"
+            }
+        },
+        {
+            "id": 45,
+            "q": "We need _______ permission.",
+            "a": [
+                "write",
+                "written",
+                "writing",
+                "writes"
+            ],
+            "correct": 1,
+            "trans": "서면 허가가 필요합니다.",
+            "exp": "명사 수식 형용사(분사).",
+            "voca": {
+                "permission": "허가"
+            }
+        },
+        {
+            "id": 46,
+            "q": "The service was _______ slow.",
+            "a": [
+                "unusual",
+                "unusually",
+                "unusualness",
+                "unusage"
+            ],
+            "correct": 1,
+            "trans": "서비스가 유난히 느렸습니다.",
+            "exp": "형용사 수식 부사.",
+            "voca": {
+                "slow": "느린"
+            }
+        },
+        {
+            "id": 47,
+            "q": "Please _______ the lights.",
+            "a": [
+                "turn off",
+                "turning off",
+                "turned off",
+                "turns off"
+            ],
+            "correct": 0,
+            "trans": "불을 꺼주세요.",
+            "exp": "명령문 동사원형.",
+            "voca": {
+                "turn off": "끄다"
+            }
+        },
+        {
+            "id": 48,
+            "q": "She is _______ about the news.",
+            "a": [
+                "excite",
+                "excited",
+                "exciting",
+                "excites"
+            ],
+            "correct": 1,
+            "trans": "그녀는 그 소식에 흥분했습니다.",
+            "exp": "감정의 p.p.",
+            "voca": {
+                "excited": "흥분한"
+            }
+        },
+        {
+            "id": 49,
+            "q": "The meeting lasted _______ two hours.",
+            "a": [
+                "for",
+                "during",
+                "while",
+                "since"
+            ],
+            "correct": 0,
+            "trans": "회의는 2시간 동안 지속되었습니다.",
+            "exp": "숫자 기간 앞 for.",
+            "voca": {
+                "last": "지속되다"
+            }
+        },
+        {
+            "id": 50,
+            "q": "He _______ the problem easily.",
+            "a": [
+                "solve",
+                "solved",
+                "solving",
+                "solves"
+            ],
+            "correct": 1,
+            "trans": "그는 문제를 쉽게 풀었습니다.",
+            "exp": "과거 시제.",
+            "voca": {
+                "solve": "풀다"
+            }
+        }
+    ],
+    "lc": [
+        {
+            "id": 101,
+            "q": "Where is the nearest post office?",
+            "a": [
+                "At 2 PM.",
+                "Around the corner.",
+                "By mail.",
+                "Yes, it is."
+            ],
+            "correct": 1,
+            "trans": "우체국이 어디인가요?",
+            "exp": "Where 질문은 장소를 답합니다.",
+            "voca": {
+                "nearest": "가장 가까운"
+            }
+        },
+        {
+            "id": 102,
+            "q": "Who called the main office?",
+            "a": [
+                "In the morning.",
+                "Mr. Lee did.",
+                "For the meeting.",
+                "No, I don't."
+            ],
+            "correct": 1,
+            "trans": "누가 본사에 전화했나요?",
+            "exp": "Who 질문은 사람을 답합니다.",
+            "voca": {
+                "main office": "본사"
+            }
+        },
+        {
+            "id": 103,
+            "q": "Why is the door locked?",
+            "a": [
+                "To the lab.",
+                "With a key.",
+                "Because it's late.",
+                "Yes, I am."
+            ],
+            "correct": 2,
+            "trans": "문이 왜 잠겨 있나요?",
+            "exp": "Why 질문은 이유를 답합니다.",
+            "voca": {
+                "lock": "잠그다"
+            }
+        },
+        {
+            "id": 104,
+            "q": "When does the train leave?",
+            "a": [
+                "At Platform 5.",
+                "In ten minutes.",
+                "To Seoul.",
+                "Yes, it does."
+            ],
+            "correct": 1,
+            "trans": "기차가 언제 떠나나요?",
+            "exp": "When 질문은 시간을 답합니다.",
+            "voca": {
+                "leave": "떠나다"
+            }
+        },
+        {
+            "id": 105,
+            "q": "How can I pay for this?",
+            "a": [
+                "In cash or credit.",
+                "By the window.",
+                "It's $20.",
+                "Yes, please."
+            ],
+            "correct": 0,
+            "trans": "어떻게 결제하나요?",
+            "exp": "How 질문은 수단을 답합니다.",
+            "voca": {
+                "pay": "지불하다"
+            }
+        },
+        {
+            "id": 106,
+            "q": "Who is the new director?",
+            "a": [
+                "In April.",
+                "Ms. Sarah Jones.",
+                "The main hall.",
+                "By car."
+            ],
+            "correct": 1,
+            "trans": "신임 이사가 누구인가요?",
+            "exp": "Who 질문은 사람 응답.",
+            "voca": {
+                "director": "이사"
+            }
+        },
+        {
+            "id": 107,
+            "q": "Where did you put the file?",
+            "a": [
+                "Since Friday.",
+                "On your desk.",
+                "For a client.",
+                "Yes, I did."
+            ],
+            "correct": 1,
+            "trans": "파일을 어디에 두었나요?",
+            "exp": "Where 질문은 장소 응답.",
+            "voca": {
+                "put": "두다"
+            }
+        },
+        {
+            "id": 108,
+            "q": "Why was the event canceled?",
+            "a": [
+                "To the park.",
+                "Bad weather.",
+                "At 5 o'clock.",
+                "No, it wasn't."
+            ],
+            "correct": 1,
+            "trans": "행사가 왜 취소되었나요?",
+            "exp": "Why 질문은 이유 응답.",
+            "voca": {
+                "cancel": "취소하다"
+            }
+        },
+        {
+            "id": 109,
+            "q": "When is the deadline?",
+            "a": [
+                "By next Friday.",
+                "In the drawer.",
+                "It's a report.",
+                "Mr. Kim."
+            ],
+            "correct": 0,
+            "trans": "마감 기한이 언제인가요?",
+            "exp": "When 질문은 시간 응답.",
+            "voca": {
+                "deadline": "마감기한"
+            }
+        },
+        {
+            "id": 110,
+            "q": "How was the conference?",
+            "a": [
+                "Very productive.",
+                "By bus.",
+                "In London.",
+                "Two days."
+            ],
+            "correct": 0,
+            "trans": "컨퍼런스는 어땠나요?",
+            "exp": "How 질문은 상태 응답.",
+            "voca": {
+                "productive": "생산적인"
+            }
+        },
+        {
+            "id": 111,
+            "q": "Who's going to the party?",
+            "a": [
+                "At the hotel.",
+                "Everyone in sales.",
+                "On Saturday.",
+                "Yes, I am."
+            ],
+            "correct": 1,
+            "trans": "파티에 누가 가나요?",
+            "exp": "Who 질문은 대상 응답.",
+            "voca": {
+                "sales": "영업팀"
+            }
+        },
+        {
+            "id": 112,
+            "q": "Where can I find a taxi?",
+            "a": [
+                "At 9 AM.",
+                "Right outside.",
+                "For the meeting.",
+                "By cash."
+            ],
+            "correct": 1,
+            "trans": "택시를 어디서 타나요?",
+            "exp": "Where 질문은 장소 응답.",
+            "voca": {
+                "outside": "밖"
+            }
+        },
+        {
+            "id": 113,
+            "q": "Why are you leaving early?",
+            "a": [
+                "To the airport.",
+                "I have a doctor's appointment.",
+                "Since morning.",
+                "Yes, I am."
+            ],
+            "correct": 1,
+            "trans": "왜 일찍 가시나요?",
+            "exp": "Why 질문은 이유 응답.",
+            "voca": {
+                "appointment": "약속"
+            }
+        },
+        {
+            "id": 114,
+            "q": "When is the flight arriving?",
+            "a": [
+                "At gate 4.",
+                "In an hour.",
+                "To New York.",
+                "By pilot."
+            ],
+            "correct": 1,
+            "trans": "비행기가 언제 도착하나요?",
+            "exp": "When 질문은 시간 응답.",
+            "voca": {
+                "arrive": "도착하다"
+            }
+        },
+        {
+            "id": 115,
+            "q": "How often do you travel?",
+            "a": [
+                "Once a year.",
+                "By plane.",
+                "To Japan.",
+                "Yes, I do."
+            ],
+            "correct": 0,
+            "trans": "얼마나 자주 여행하시나요?",
+            "exp": "How often은 빈도 응답.",
+            "voca": {
+                "how often": "얼마나 자주"
+            }
+        },
+        {
+            "id": 116,
+            "q": "Who fixed the printer?",
+            "a": [
+                "The IT guy.",
+                "Yesterday.",
+                "Paper jam.",
+                "In the office."
+            ],
+            "correct": 0,
+            "trans": "누가 프린터를 고쳤나요?",
+            "exp": "Who 질문은 사람 응답.",
+            "voca": {
+                "fix": "고치다"
+            }
+        },
+        {
+            "id": 117,
+            "q": "Where is the meeting held?",
+            "a": [
+                "At 3 PM.",
+                "In room 302.",
+                "About the budget.",
+                "Mr. Smith."
+            ],
+            "correct": 1,
+            "trans": "회의가 어디서 열리나요?",
+            "exp": "Where 질문은 장소 응답.",
+            "voca": {
+                "held": "열리는"
+            }
+        },
+        {
+            "id": 118,
+            "q": "Why did he resign?",
+            "a": [
+                "To New York.",
+                "For a better job.",
+                "Since July.",
+                "No, he didn't."
+            ],
+            "correct": 1,
+            "trans": "그는 왜 사임했나요?",
+            "exp": "Why 질문은 이유 응답.",
+            "voca": {
+                "resign": "사임하다"
+            }
+        },
+        {
+            "id": 119,
+            "q": "When will you finish?",
+            "a": [
+                "By tomorrow.",
+                "On my desk.",
+                "It's a task.",
+                "Yes, I will."
+            ],
+            "correct": 0,
+            "trans": "언제 끝내실 건가요?",
+            "exp": "When 질문은 시간 응답.",
+            "voca": {
+                "finish": "끝내다"
+            }
+        },
+        {
+            "id": 120,
+            "q": "How do you like your new job?",
+            "a": [
+                "It's very challenging.",
+                "By bus.",
+                "In the city.",
+                "Since Monday."
+            ],
+            "correct": 0,
+            "trans": "새 직장은 어떠신가요?",
+            "exp": "How(의견) 질문 응답.",
+            "voca": {
+                "challenging": "도전적인"
+            }
+        },
+        {
+            "id": 121,
+            "q": "Who took my pen?",
+            "a": [
+                "I think Sarah did.",
+                "On the table.",
+                "It's blue.",
+                "Yesterday."
+            ],
+            "correct": 0,
+            "trans": "누가 제 펜을 가져갔나요?",
+            "exp": "Who 질문은 사람 응답.",
+            "voca": {
+                "took": "가져갔다"
+            }
+        },
+        {
+            "id": 122,
+            "q": "Where shall we eat?",
+            "a": [
+                "At 12:30.",
+                "The Italian place.",
+                "With the boss.",
+                "Yes, let's."
+            ],
+            "correct": 1,
+            "trans": "어디서 먹을까요?",
+            "exp": "Where 질문은 장소 제안 응답.",
+            "voca": {
+                "Italian": "이탈리아 식당"
+            }
+        },
+        {
+            "id": 123,
+            "q": "Why is she so happy?",
+            "a": [
+                "In the office.",
+                "She got a bonus.",
+                "Since morning.",
+                "No, she isn't."
+            ],
+            "correct": 1,
+            "trans": "그녀는 왜 그렇게 기뻐하나요?",
+            "exp": "Why 질문은 이유 응답.",
+            "voca": {
+                "bonus": "보너스"
+            }
+        },
+        {
+            "id": 124,
+            "q": "When is the next bus?",
+            "a": [
+                "At platform 2.",
+                "Every 15 minutes.",
+                "To the mall.",
+                "Yes, it is."
+            ],
+            "correct": 1,
+            "trans": "다음 버스는 언제인가요?",
+            "exp": "When 질문은 시간/빈도 응답.",
+            "voca": {
+                "every": "매 ~마다"
+            }
+        },
+        {
+            "id": 125,
+            "q": "How can I help you?",
+            "a": [
+                "I'm looking for a shirt.",
+                "By yourself.",
+                "In the store.",
+                "Yes, please."
+            ],
+            "correct": 0,
+            "trans": "어떻게 도와드릴까요?",
+            "exp": "How 질문은 목적 응답.",
+            "voca": {
+                "look for": "찾다"
+            }
+        },
+        {
+            "id": 126,
+            "q": "Who wants some coffee?",
+            "a": [
+                "I'd love some.",
+                "In the kitchen.",
+                "Black coffee.",
+                "Now."
+            ],
+            "correct": 0,
+            "trans": "커피 마실 분?",
+            "exp": "Who 질문은 대상 응답.",
+            "voca": {
+                "love": "원하다"
+            }
+        },
+        {
+            "id": 127,
+            "q": "Where is the library?",
+            "a": [
+                "Since 1990.",
+                "Across from the park.",
+                "To read books.",
+                "Yes, it is."
+            ],
+            "correct": 1,
+            "trans": "도서관이 어디인가요?",
+            "exp": "Where 질문은 장소 응답.",
+            "voca": {
+                "across from": "맞은편에"
+            }
+        },
+        {
+            "id": 128,
+            "q": "Why are you so late?",
+            "a": [
+                "Traffic was terrible.",
+                "To the office.",
+                "At 8 AM.",
+                "No, I'm not."
+            ],
+            "correct": 0,
+            "trans": "왜 이렇게 늦었나요?",
+            "exp": "Why 질문은 이유 응답.",
+            "voca": {
+                "traffic": "교통"
+            }
+        },
+        {
+            "id": 129,
+            "q": "When did you graduate?",
+            "a": [
+                "Two years ago.",
+                "From Harvard.",
+                "In the hall.",
+                "Yes, I did."
+            ],
+            "correct": 0,
+            "trans": "언제 졸업했나요?",
+            "exp": "When 질문은 과거 시점 응답.",
+            "voca": {
+                "graduate": "졸업하다"
+            }
+        },
+        {
+            "id": 130,
+            "q": "How do I get to the station?",
+            "a": [
+                "Take a left here.",
+                "By 5 PM.",
+                "It's near.",
+                "Yes, you do."
+            ],
+            "correct": 0,
+            "trans": "역에 어떻게 가나요?",
+            "exp": "How(방법) 질문 응답.",
+            "voca": {
+                "get to": "도착하다"
+            }
+        },
+        {
+            "id": 131,
+            "q": "Who won the game?",
+            "a": [
+                "The home team.",
+                "Yesterday.",
+                "3 to 1.",
+                "In Seoul."
+            ],
+            "correct": 0,
+            "trans": "누가 경기에서 이겼나요?",
+            "exp": "Who 질문은 대상 응답.",
+            "voca": {
+                "won": "이겼다"
+            }
+        },
+        {
+            "id": 132,
+            "q": "Where are you going?",
+            "a": [
+                "To the gym.",
+                "At noon.",
+                "By bike.",
+                "Yes, I am."
+            ],
+            "correct": 0,
+            "trans": "어디 가시나요?",
+            "exp": "Where 질문은 목적지 응답.",
+            "voca": {
+                "gym": "체육관"
+            }
+        },
+        {
+            "id": 133,
+            "q": "Why didn't you call me?",
+            "a": [
+                "I forgot your number.",
+                "To the party.",
+                "Yesterday.",
+                "No, I didn't."
+            ],
+            "correct": 0,
+            "trans": "왜 전화 안 했어요?",
+            "exp": "Why 질문은 이유 응답.",
+            "voca": {
+                "forget": "잊다"
+            }
+        },
+        {
+            "id": 134,
+            "q": "When is the store opening?",
+            "a": [
+                "At 10 AM.",
+                "On Main Street.",
+                "New clothes.",
+                "Yes, it is."
+            ],
+            "correct": 0,
+            "trans": "상점이 언제 여나요?",
+            "exp": "When 질문은 시간 응답.",
+            "voca": {
+                "opening": "여는"
+            }
+        },
+        {
+            "id": 135,
+            "q": "How long is the movie?",
+            "a": [
+                "About 2 hours.",
+                "It's funny.",
+                "In the cinema.",
+                "Yes, it is."
+            ],
+            "correct": 0,
+            "trans": "영화가 얼마나 긴가요?",
+            "exp": "How long 질문은 기간 응답.",
+            "voca": {
+                "long": "긴"
+            }
+        },
+        {
+            "id": 136,
+            "q": "Who is coming to dinner?",
+            "a": [
+                "Only the family.",
+                "At 7 PM.",
+                "Steak and pasta.",
+                "Yes, they are."
+            ],
+            "correct": 0,
+            "trans": "저녁 식사에 누가 오나요?",
+            "exp": "Who 질문은 사람 응답.",
+            "voca": {
+                "dinner": "저녁식사"
+            }
+        },
+        {
+            "id": 137,
+            "q": "Where is the remote control?",
+            "a": [
+                "Under the sofa.",
+                "To watch TV.",
+                "It's black.",
+                "Yes, it is."
+            ],
+            "correct": 0,
+            "trans": "리모컨이 어디 있나요?",
+            "exp": "Where 질문은 장소 응답.",
+            "voca": {
+                "remote control": "리모컨"
+            }
+        },
+        {
+            "id": 138,
+            "q": "Why are you wearing a suit?",
+            "a": [
+                "I have an interview.",
+                "In the closet.",
+                "It's expensive.",
+                "No, I'm not."
+            ],
+            "correct": 0,
+            "trans": "왜 정장을 입고 있나요?",
+            "exp": "Why 질문은 이유 응답.",
+            "voca": {
+                "suit": "정장"
+            }
+        },
+        {
+            "id": 139,
+            "q": "When is your birthday?",
+            "a": [
+                "Next Sunday.",
+                "In the house.",
+                "A big cake.",
+                "Yes, it is."
+            ],
+            "correct": 0,
+            "trans": "생일이 언제인가요?",
+            "exp": "When 질문은 날짜 응답.",
+            "voca": {
+                "birthday": "생일"
+            }
+        },
+        {
+            "id": 140,
+            "q": "How deep is the pool?",
+            "a": [
+                "2 meters.",
+                "It's cold.",
+                "In the garden.",
+                "Yes, it is."
+            ],
+            "correct": 0,
+            "trans": "수영장이 얼마나 깊나요?",
+            "exp": "How deep 질문은 깊이 응답.",
+            "voca": {
+                "deep": "깊은"
+            }
+        },
+        {
+            "id": 141,
+            "q": "Who made this cake?",
+            "a": [
+                "My sister did.",
+                "Yesterday.",
+                "For the party.",
+                "It's sweet."
+            ],
+            "correct": 0,
+            "trans": "누가 이 케이크를 만들었나요?",
+            "exp": "Who 질문은 사람 응답.",
+            "voca": {
+                "made": "만들었다"
+            }
+        },
+        {
+            "id": 142,
+            "q": "Where do you live?",
+            "a": [
+                "In Jinju.",
+                "Since 2010.",
+                "With my parents.",
+                "By bus."
+            ],
+            "correct": 0,
+            "trans": "어디 사시나요?",
+            "exp": "Where 질문은 장소 응답.",
+            "voca": {
+                "live": "살다"
+            }
+        },
+        {
+            "id": 143,
+            "q": "Why are the windows open?",
+            "a": [
+                "To let in fresh air.",
+                "It's glass.",
+                "In the morning.",
+                "No, they aren't."
+            ],
+            "correct": 0,
+            "trans": "창문이 왜 열려 있나요?",
+            "exp": "Why 질문은 이유 응답.",
+            "voca": {
+                "fresh air": "신선한 공기"
+            }
+        },
+        {
+            "id": 144,
+            "q": "When is the concert starting?",
+            "a": [
+                "At 8 sharp.",
+                "In the stadium.",
+                "Famous singers.",
+                "Yes, it is."
+            ],
+            "correct": 0,
+            "trans": "콘서트가 언제 시작하나요?",
+            "exp": "When 질문은 시간 응답.",
+            "voca": {
+                "sharp": "정각에"
+            }
+        },
+        {
+            "id": 145,
+            "q": "How much is the fare?",
+            "a": [
+                "It's 3 dollars.",
+                "By train.",
+                "To the airport.",
+                "Yes, please."
+            ],
+            "correct": 0,
+            "trans": "요금이 얼마인가요?",
+            "exp": "How much 질문은 가격 응답.",
+            "voca": {
+                "fare": "요금"
+            }
+        },
+        {
+            "id": 146,
+            "q": "Who is the owner?",
+            "a": [
+                "Mr. Henderson.",
+                "Since last year.",
+                "A big house.",
+                "In London."
+            ],
+            "correct": 0,
+            "trans": "주인이 누구인가요?",
+            "exp": "Who 질문은 사람 응답.",
+            "voca": {
+                "owner": "주인"
+            }
+        },
+        {
+            "id": 147,
+            "q": "Where is my umbrella?",
+            "a": [
+                "Behind the door.",
+                "It's raining.",
+                "To stay dry.",
+                "Yes, it is."
+            ],
+            "correct": 0,
+            "trans": "제 우산이 어디 있나요?",
+            "exp": "Where 질문은 장소 응답.",
+            "voca": {
+                "umbrella": "우산"
+            }
+        },
+        {
+            "id": 148,
+            "q": "Why did you stop?",
+            "a": [
+                "The light was red.",
+                "To the store.",
+                "In the car.",
+                "No, I didn't."
+            ],
+            "correct": 0,
+            "trans": "왜 멈췄나요?",
+            "exp": "Why 질문은 이유 응답.",
+            "voca": {
+                "red light": "빨간불"
+            }
+        },
+        {
+            "id": 149,
+            "q": "When is the meeting over?",
+            "a": [
+                "In 20 minutes.",
+                "On the 2nd floor.",
+                "About the sales.",
+                "Yes, it is."
+            ],
+            "correct": 0,
+            "trans": "회의가 언제 끝나나요?",
+            "exp": "When 질문은 시간 응답.",
+            "voca": {
+                "over": "끝난"
+            }
+        },
+        {
+            "id": 150,
+            "q": "How many people are coming?",
+            "a": [
+                "Exactly twelve.",
+                "By bus.",
+                "At 6 PM.",
+                "Yes, they are."
+            ],
+            "correct": 0,
+            "trans": "몇 명이나 오나요?",
+            "exp": "How many 질문은 수량 응답.",
+            "voca": {
+                "exactly": "정확히"
+            }
+        }
+    ]
+}

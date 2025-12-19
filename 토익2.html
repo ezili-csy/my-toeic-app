@@ -3,130 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>TOEIC Vibe - Master</title>
+    <title>TOEIC Master Vibe</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/512/4c51bf/ffffff?text=TOEIC">
     <link rel="apple-touch-icon" href="https://via.placeholder.com/512/4c51bf/ffffff?text=TOEIC">
+
     <style>
         @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-        body { background-color: #f8fafc; font-family: 'Pretendard', sans-serif; -webkit-user-select: none; user-select: none; }
-        .quiz-container { background: white; min-height: 100vh; width: 100%; max-width: 500px; margin: 0 auto; padding: 1.5rem; display: flex; flex-direction: column; }
-        .btn-option { width: 100%; text-align: left; padding: 20px; margin-bottom: 12px; border: 2px solid #f1f4f8; border-radius: 20px; background: white; font-weight: 600; font-size: 1.1rem; }
-        .btn-option:active { background-color: #eef2ff; transform: scale(0.98); }
-        .mode-card { cursor: pointer; border: 2px solid #edf2f7; border-radius: 24px; padding: 1.5rem; transition: 0.3s; text-align: center; }
-        .mode-card.wrong-mode { border-color: #f87171; background-color: #fef2f2; }
-        .progress-bar-custom { height: 6px; background-color: #edf2f7; border-radius: 10px; margin-bottom: 1.5rem; }
-        .progress-fill { height: 100%; background: #4c51bf; border-radius: 10px; transition: width 0.3s; }
-        .voca-badge { background: #e2e8f0; color: #475569; padding: 3px 8px; border-radius: 6px; font-size: 0.75rem; margin-right: 4px; display: inline-block; margin-top: 4px; }
+        
+        body { 
+            background-color: #f8fafc; 
+            font-family: 'Pretendard', sans-serif; 
+            -webkit-user-select: none; 
+            user-select: none; 
+            touch-action: manipulation;
+        }
+
+        .quiz-container { 
+            background: white; 
+            min-height: 100vh; 
+            width: 100%; 
+            max-width: 500px; 
+            margin: 0 auto; 
+            padding: 1.5rem; 
+            display: flex; 
+            flex-direction: column; 
+            box-shadow: 0 0 20px rgba(0,0,0,0.02);
+        }
+
+        /* 버튼 및 카드 스타일 */
+        .btn-option { 
+            width: 100%; 
+            text-align: left; 
+            padding: 18px; 
+            margin-bottom: 12px; 
+            border: 2px solid #f1f4f8; 
+            border-radius: 20px; 
+            background: white; 
+            font-weight: 600; 
+            font-size: 1rem; 
+            transition: all 0.2s ease; 
+        }
+        .btn-option:active { 
+            background-color: #eef2ff; 
+            transform: scale(0.98); 
+            border-color: #4c51bf; 
+        }
+
+        .mode-card { 
+            cursor: pointer; 
+            border: 2px solid #edf2f7; 
+            border-radius: 24px; 
+            padding: 1.5rem; 
+            transition: 0.3s; 
+            text-align: center; 
+            height: 100%; 
+        }
+        .mode-card:active { 
+            border-color: #4c51bf; 
+            background-color: #f8faff; 
+        }
+
+        /* 프로그레스 바 */
+        .progress-bar-custom { 
+            height: 6px; 
+            background-color: #edf2f7; 
+            border-radius: 10px; 
+            margin-bottom: 1.5rem; 
+            overflow: hidden;
+        }
+        .progress-fill { 
+            height: 100%; 
+            background: linear-gradient(90deg, #4c51bf, #6366f1); 
+            border-radius: 10px; 
+            transition: width 0.3s ease; 
+        }
+
+        .voca-badge { 
+            background: #f1f5f9; 
+            color: #64748b; 
+            padding: 4px 8px; 
+            border-radius: 8px; 
+            font-size: 0.75rem; 
+            margin-right: 4px; 
+            display: inline-block; 
+            margin-top: 4px; 
+            font-weight: 600; 
+            border: 1px solid #e2e8f0;
+        }
+
+        .custom-scroll::-webkit-scrollbar { width: 4px; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: #cbd5e0; border-radius: 10px; }
     </style>
 </head>
 <body>
 
     <div class="quiz-container">
         <div id="start-screen" class="my-auto">
-            <h2 class="fw-bold mb-4 text-center">토익 학습 대시보드</h2>
+            <div class="text-center mb-5">
+                <span style="font-size: 4rem;">🎯</span>
+                <h2 class="fw-bold mt-3">토익 700점 챌린지</h2>
+                <p class="text-muted small">Daily RC & LC Study Partner</p>
+            </div>
             
             <div class="row g-3 mb-4">
-                <div class="col-6"><div class="mode-card" onclick="startQuiz('RC')"><div class="h3 mb-1">📖</div><h6 class="fw-bold">RC 독해</h6></div></div>
-                <div class="col-6"><div class="mode-card" onclick="startQuiz('LC')"><div class="h3 mb-1">🎧</div><h6 class="fw-bold">LC 듣기</h6></div></div>
+                <div class="col-6">
+                    <div class="mode-card shadow-sm" onclick="startQuiz('RC')">
+                        <div class="h3 mb-2">📖</div>
+                        <h6 class="fw-bold mb-0">RC 독해</h6>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mode-card shadow-sm" onclick="startQuiz('LC')">
+                        <div class="h3 mb-2">🎧</div>
+                        <h6 class="fw-bold mb-0">LC 듣기</h6>
+                    </div>
+                </div>
                 <div class="col-12">
-                    <div class="mode-card wrong-mode" onclick="startWrongMode()">
+                    <div class="mode-card border-danger shadow-sm" style="background:#fff5f5" onclick="startWrongMode()">
                         <div class="d-flex justify-content-center align-items-center">
-                            <span class="h4 mb-0 me-2">🔥</span>
-                            <h6 class="fw-bold mb-0">틀린 문제만 다시 풀기 (<span id="wrong-count">0</span>)</h6>
+                            <span class="me-2 text-danger">🔥</span>
+                            <h6 class="fw-bold mb-0 text-danger">오답 노트 복습 (<span id="wrong-count">0</span>)</h6>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="p-3 bg-light rounded-4 mb-3">
-                <p class="small text-muted mb-1">누적 학습 기록</p>
-                <div id="stat-info" class="fw-bold small text-dark">데이터를 불러오는 중...</div>
+            <div class="p-3 bg-light rounded-4 mb-3 text-start">
+                <p class="text-muted mb-1" style="font-size: 0.7rem;">나의 학습 통계</p>
+                <div id="stat-info" class="fw-bold small text-dark tracking-tight">데이터 로딩 중...</div>
             </div>
+            
             <div class="text-center">
-                <button onclick="resetHistory()" class="btn btn-link text-muted text-decoration-none btn-sm">데이터 전체 초기화</button>
+                <button onclick="resetHistory()" class="btn btn-link text-muted text-decoration-none btn-sm" style="font-size: 0.7rem;">전체 기록 및 오답 초기화</button>
             </div>
         </div>
 
         <div id="quiz-content" style="display:none;">
-            <div class="progress-bar-custom"><div id="progress-fill" class="progress-fill"></div></div>
+            <div class="progress-bar-custom"><div id="progress-fill" class="progress-fill" style="width: 0%"></div></div>
+            
             <div id="lc-ui" style="display:none;" class="mb-4">
-                <button onclick="playCurrentAudio()" class="btn btn-primary w-100 py-3 rounded-4 fw-bold shadow-sm">🔊 문제 다시 듣기</button>
+                <button onclick="playCurrentAudio()" class="btn btn-primary w-100 py-3 rounded-4 fw-bold shadow-sm" style="background: #4c51bf; border:none;">
+                    🔊 문제 다시 듣기
+                </button>
             </div>
-            <h4 id="question" class="fw-bold mb-5" style="line-height: 1.5;"></h4>
-            <div id="options"></div>
+
+            <h5 id="question" class="fw-bold mb-5" style="line-height: 1.6; word-break: keep-all; color: #1e293b;"></h5>
+            
+            <div id="options" class="mb-4"></div>
         </div>
 
-        <div id="result-screen" style="display:none;" class="py-3">
-            <h3 class="fw-bold text-center mb-4">결과 리포트</h3>
-            <div id="score-text" class="display-5 fw-black text-center text-primary mb-4"></div>
-            <div id="review-section" class="overflow-auto pe-1" style="max-height: 400px;"></div>
-            <button onclick="location.reload()" class="btn btn-dark w-100 py-3 rounded-4 fw-bold mt-4">메인으로</button>
+        <div id="result-screen" style="display:none;" class="py-2">
+            <div class="text-center mb-4">
+                <h3 class="fw-bold mb-1">학습 리포트</h3>
+                <div id="score-text" class="display-5 fw-black text-primary mb-2"></div>
+                <p id="result-msg" class="text-muted small"></p>
+            </div>
+            
+            <div id="review-section" class="overflow-auto pe-1 custom-scroll" style="max-height: 420px;">
+                </div>
+            
+            <button onclick="location.reload()" class="btn btn-dark w-100 py-3 rounded-4 fw-bold mt-4 shadow">대시보드로 돌아가기</button>
         </div>
     </div>
 
     <script>
-        const rcBank = [
-            { id: 1, q: "The manager _______ the proposal yesterday.", a: ["accept", "accepting", "accepted", "accepts"], correct: 2, trans: "매니저는 어제 그 제안을 수락했다.", exp: "과거 시제 문제입니다.", voca: { manager: "관리자", proposal: "제안" } },
-            { id: 2, q: "Employees are _______ to attend the workshop.", a: ["require", "required", "requiring", "requirement"], correct: 1, trans: "직원들은 워크숍 참석이 요구됩니다.", exp: "수동태 문장입니다.", voca: { employee: "직원", attend: "참석하다" } },
-            { id: 3, q: "The flight was canceled _______ the heavy rain.", a: ["due to", "because", "since", "as"], correct: 0, trans: "폭우 때문에 비행기가 취소되었습니다.", exp: "명사구 앞 전치사 자리입니다.", voca: { flight: "비행편", cancel: "취소하다" } }
-        ];
-        const lcBank = [
-            { id: 101, q: "Where is the nearest post office?", a: ["At two o'clock.", "Just around the corner.", "By express mail.", "I sent it yesterday."], correct: 1, trans: "가장 가까운 우체국이 어디인가요?", exp: "Where 질문은 장소를 답합니다.", voca: { nearest: "가장 가까운" } }
-        ];
-
+        // 전역 상태 관리
+        let dataRC = [];
+        let dataLC = [];
         let currentQuestions = [];
         let currentIndex = 0;
         let score = 0;
         let userAnswers = [];
         let currentMode = 'RC';
 
-        window.onload = () => {
+        // 1. 외부 JSON 데이터 불러오기
+        async function loadAllQuestions() {
+            try {
+                // [주의] questions.json 파일이 같은 폴더에 있어야 함
+                const response = await fetch('questions.json');
+                if (!response.ok) throw new Error('Network response was not ok');
+                const data = await response.json();
+                
+                dataRC = data.rc;
+                dataLC = data.lc;
+                
+                console.log("JSON Load Success");
+                updateDashboard();
+            } catch (error) {
+                console.error("Fetch Error:", error);
+                document.getElementById('stat-info').innerText = "데이터를 불러올 수 없습니다. (JSON 파일 확인 필요)";
+            }
+        }
+
+        // 2. 대시보드 통계 업데이트
+        function updateDashboard() {
             const history = JSON.parse(localStorage.getItem('toeic_history') || '[]');
             const wrongPool = JSON.parse(localStorage.getItem('toeic_wrong_pool') || '[]');
-            document.getElementById('stat-info').innerText = `누적 퀴즈: ${history.length}회 | 평균 점수: ${history.length ? Math.round(history.reduce((a,b)=>a+b.score,0)/history.length) : 0}/5`;
-            document.getElementById('wrong-count').innerText = wrongPool.length;
-        };
+            
+            const totalAttempts = history.length;
+            const avgScore = totalAttempts > 0 
+                ? (history.reduce((acc, curr) => acc + curr.score, 0) / totalAttempts).toFixed(1) 
+                : 0;
 
-        function startQuiz(mode) {
-            currentMode = mode;
-            const bank = mode === 'RC' ? rcBank : lcBank;
-            currentQuestions = [...bank].sort(() => 0.5 - Math.random()).slice(0, 5);
-            setupQuizUI();
+            document.getElementById('stat-info').innerText = totalAttempts > 0 
+                ? `총 ${totalAttempts}회 완료 | 평균 ${avgScore}점 | 꾸준함이 정답입니다!`
+                : "반가워요! 첫 번째 퀴즈를 시작해 보세요.";
+            
+            document.getElementById('wrong-count').innerText = wrongPool.length;
         }
+
+        // 3. 퀴즈 시작 로직
+        function startQuiz(mode) {
+            if (dataRC.length === 0) return alert("데이터를 불러오는 중입니다...");
+            
+            currentMode = mode;
+            const bank = mode === 'RC' ? dataRC : dataLC;
+            currentQuestions = shuffle([...bank]).slice(0, 5);
+            
+            initQuizUI();
+        }
+
+                // 선언부를 스크립트 최상단으로 올리고, 
+// 전역 스코프에 함수가 확실히 등록되도록 합니다.
+window.startQuiz = function(mode) {
+    if (typeof dataRC === 'undefined' || dataRC.length === 0) {
+        alert("데이터를 불러오는 중입니다. 잠시 후 다시 시도해 주세요.");
+        return;
+    }
+    currentMode = mode;
+    const bank = mode === 'RC' ? dataRC : dataLC;
+    currentQuestions = shuffle([...bank]).slice(0, 5);
+    initQuizUI();
+};
 
         function startWrongMode() {
-            const wrongPool = JSON.parse(localStorage.getItem('toeic_wrong_pool') || '[]');
-            if (wrongPool.length === 0) return alert("틀린 문제가 없습니다!");
+            const pool = JSON.parse(localStorage.getItem('toeic_wrong_pool') || '[]');
+            if (pool.length === 0) return alert("복습할 오답이 없습니다!");
+            
             currentMode = 'WRONG';
-            currentQuestions = [...wrongPool].sort(() => 0.5 - Math.random()).slice(0, 5);
-            setupQuizUI();
+            currentQuestions = shuffle([...pool]).slice(0, 5);
+            initQuizUI();
         }
 
-        function setupQuizUI() {
+        function initQuizUI() {
             document.getElementById('start-screen').style.display = 'none';
             document.getElementById('quiz-content').style.display = 'block';
+            currentIndex = 0; score = 0; userAnswers = [];
             showQuestion();
         }
 
-        function showQuestion() {
-            const qData = currentQuestions[currentIndex];
-            document.getElementById('progress-fill').style.width = `${((currentIndex + 1) / currentQuestions.length) * 100}%`;
-            
-            // LC 모드 혹은 문제의 출처가 LC인 경우 소리 재생 UI 노출
-            const isLC = currentMode === 'LC' || (currentMode === 'WRONG' && qData.id >= 100);
-            document.getElementById('lc-ui').style.display = isLC ? 'block' : 'none';
-            document.getElementById('question').innerText = isLC ? "문제를 듣고 알맞은 답을 고르세요." : qData.q;
-            
-            if (isLC) playCurrentAudio();
+        // 4. 문제 표시 및 음성 재생
 
-            const optionsDiv = document.getElementById('options');
-            optionsDiv.innerHTML = '';
-            qData.a.forEach((opt, idx) => {
+
+
+
+        function showQuestion() {
+            const q = currentQuestions[currentIndex];
+            // ID가 100 이상이면 LC 문제로 간주 (JSON 데이터 설계 기준)
+            const isLCProblem = currentMode === 'LC' || (currentMode === 'WRONG' && q.id >= 100);
+            
+            document.getElementById('progress-fill').style.width = `${((currentIndex + 1) / currentQuestions.length) * 100}%`;
+            document.getElementById('lc-ui').style.display = isLCProblem ? 'block' : 'none';
+            document.getElementById('question').innerText = isLCProblem ? "🔊 오디오를 듣고 질문에 답하세요." : q.q;
+            
+            if (isLCProblem) playCurrentAudio();
+
+            const optDiv = document.getElementById('options');
+            optDiv.innerHTML = '';
+            q.a.forEach((opt, idx) => {
                 const btn = document.createElement('button');
                 btn.className = "btn-option shadow-sm";
                 btn.innerText = opt;
                 btn.onclick = () => checkAnswer(idx);
-                optionsDiv.appendChild(btn);
+                optDiv.appendChild(btn);
             });
         }
 
@@ -134,72 +286,96 @@
             window.speechSynthesis.cancel();
             const utterance = new SpeechSynthesisUtterance(currentQuestions[currentIndex].q);
             utterance.lang = 'en-US';
-            utterance.rate = 0.8;
+            utterance.rate = 0.85; // 토익 평균 속도보다 약간 느리게 설정
             window.speechSynthesis.speak(utterance);
         }
 
-        function checkAnswer(selected) {
-            const qData = currentQuestions[currentIndex];
-            const isCorrect = selected === qData.correct;
+        // 5. 정답 확인 및 오답 관리
+        function checkAnswer(idx) {
+            const q = currentQuestions[currentIndex];
+            const isCorrect = idx === q.correct;
             
-            userAnswers.push(selected);
+            userAnswers.push(idx);
+            window.speechSynthesis.cancel();
+
             if (isCorrect) {
                 score++;
-                // 맞히면 오답 풀에서 제거
-                removeFromWrongPool(qData.id);
+                manageWrongPool(q.id, 'REMOVE');
             } else {
-                // 틀리면 오답 풀에 추가
-                addToWrongPool(qData);
+                manageWrongPool(q, 'ADD');
             }
-
+            
             currentIndex++;
-            if (currentIndex < currentQuestions.length) showQuestion();
-            else finishQuiz();
-        }
-
-        function addToWrongPool(qData) {
-            let pool = JSON.parse(localStorage.getItem('toeic_wrong_pool') || '[]');
-            if (!pool.find(item => item.id === qData.id)) {
-                pool.push(qData);
-                localStorage.setItem('toeic_wrong_pool', JSON.stringify(pool));
+            if (currentIndex < currentQuestions.length) {
+                showQuestion();
+            } else {
+                showResult();
             }
         }
 
-        function removeFromWrongPool(qId) {
+        function manageWrongPool(data, action) {
             let pool = JSON.parse(localStorage.getItem('toeic_wrong_pool') || '[]');
-            pool = pool.filter(item => item.id !== qId);
+            if (action === 'ADD') {
+                if (!pool.find(x => x.id === data.id)) pool.push(data);
+            } else {
+                pool = pool.filter(x => x.id !== data);
+            }
             localStorage.setItem('toeic_wrong_pool', JSON.stringify(pool));
         }
 
-        function finishQuiz() {
-            const history = JSON.parse(localStorage.getItem('toeic_history') || '[]');
-            history.push({ score: score });
-            localStorage.setItem('toeic_history', JSON.stringify(history));
-            showResult();
-        }
-
+        // 6. 결과 리포트 출력
         function showResult() {
+            // 기록 저장
+            const history = JSON.parse(localStorage.getItem('toeic_history') || '[]');
+            history.push({ date: new Date().toLocaleDateString(), score: score });
+            localStorage.setItem('toeic_history', JSON.stringify(history));
+
             document.getElementById('quiz-content').style.display = 'none';
             document.getElementById('result-screen').style.display = 'block';
-            document.getElementById('score-text').innerText = `${score} / ${currentQuestions.length}`;
+            document.getElementById('score-text').innerText = `${score} / 5`;
+            
             const reviewSection = document.getElementById('review-section');
-            currentQuestions.forEach((q, idx) => {
-                const isCorrect = userAnswers[idx] === q.correct;
+            reviewSection.innerHTML = '<h6 class="fw-bold mb-3 text-secondary">심층 오답 분석</h6>';
+            
+            currentQuestions.forEach((q, i) => {
+                const isCorrect = userAnswers[i] === q.correct;
+                const vocaHtml = Object.entries(q.voca).map(([k, v]) => `<span class="voca-badge">${k}: ${v}</span>`).join('');
+                
                 reviewSection.innerHTML += `
-                    <div class="p-3 mb-3 rounded-4 border ${isCorrect ? 'bg-success bg-opacity-10' : 'bg-danger bg-opacity-10'}">
-                        <div class="fw-bold small mb-1">Q: ${q.q}</div>
-                        <div class="small mb-1 text-muted">정답: ${q.a[q.correct]}</div>
-                        <div class="small border-top pt-2 mt-2">해석: ${q.trans}</div>
+                    <div class="p-3 mb-3 rounded-4 border ${isCorrect ? 'border-success-subtle bg-success-light' : 'border-danger-subtle bg-danger-light'}" style="background-color: ${isCorrect ? '#f0fff4' : '#fff5f5'}">
+                        <div class="fw-bold small mb-2 text-dark">${q.q}</div>
+                        <div class="small mb-3 ${isCorrect ? 'text-success' : 'text-danger'} fw-bold">
+                            정답: ${q.a[q.correct]} ${!isCorrect ? `| 내 답변: ${q.a[userAnswers[i]]}` : ''}
+                        </div>
+                        <div class="bg-white p-3 rounded-3 border-0 shadow-sm mb-3" style="font-size:0.85rem">
+                            <div class="mb-1 text-primary fw-bold">해석</div>
+                            <div class="text-secondary mb-2">${q.trans}</div>
+                            <div class="mb-1 text-indigo fw-bold" style="color:#4c51bf">해설</div>
+                            <div class="text-secondary small">${q.exp}</div>
+                        </div>
+                        <div class="d-flex flex-wrap">${vocaHtml}</div>
                     </div>`;
             });
         }
 
+        // 유틸리티: 피셔-예이츠 셔플
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
         function resetHistory() {
-            if(confirm("모든 기록과 오답 노트를 초기화하시겠습니까?")) {
+            if (confirm("모든 학습 기록과 오답 노트가 삭제됩니다. 정말 초기화하시겠습니까?")) {
                 localStorage.clear();
                 location.reload();
             }
         }
+
+        // 초기화
+        window.onload = loadAllQuestions;
     </script>
 </body>
 </html>
